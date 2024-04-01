@@ -1,6 +1,3 @@
-
-Certainly! Here's a sample README.md file content for a GitHub repository that uses Storybook:
-
 MyProject
 
 MyProject is a collection of reusable UI components developed using React.js. This repository utilizes Storybook to provide an interactive development environment for exploring and testing these components.
