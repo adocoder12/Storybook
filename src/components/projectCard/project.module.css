@@ -1,0 +1,68 @@
+.project_puesto {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  margin: 0px auto;
+  width: 100%;
+  align-content: start;
+}
+
+.project_img_wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #3e3e3e;
+  cursor: pointer;
+}
+
+.project_img_wrap img.background_project {
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  transition: 1s ease;
+  opacity: 1;
+  -webkit-transition: 1s ease-in-out;
+  object-position: bottom;
+}
+
+.project_img_wrap img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+  opacity: 0.5;
+}
+
+.logo_project {
+  position: absolute;
+  z-index: 2;
+  height: auto;
+  width: clamp(225px, 15.63vw, min(41.67vh, 400.128px));
+  max-width: 100%;
+  max-height: 100%;
+  /* aspect-ratio: 1 / 1; */
+  inset: 0px;
+  margin: auto;
+  filter: brightness(0) invert(100%);
+  pointer-events: none;
+}
+
+.project_text_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.project_text_wrap > h3::after {
+  font-weight: 300;
+  display: inline-block;
+  content: "|";
+  margin: auto 0.5em;
+}
+
+.project_text_wrap p {
+  color: black;
+  font-size: 14px;
+}
